@@ -55,4 +55,11 @@ main(List<String> arguments) {
     print ("$k is standing in $v position");
   });
 
+  print(createName('Proloy'));
+  print(createName('Proloy', 'Gando'));
+
+}
+
+String createName(String s, [String t = "Das"]) {
+  return s+ " " +t;
 }
