@@ -55,11 +55,25 @@ main(List<String> arguments) {
     print ("$k is standing in $v position");
   });
 
+  //Beginner Fucntions....
+
   print(createName('Proloy'));
   print(createName('Proloy', 'Gando'));
 
+  //Advanced Functions....
+  List<int> nums = new List<int>();
+  nums.add(1);
+  nums.add(2);
+  nums.add(3);
+
+  print("As Obejct");
+  nums.forEach(asObject);
 }
 
 String createName(String s, [String t = "Das"]) {
   return s+ " " +t;
+}
+
+void asObject(int i){
+  print(i);
 }
