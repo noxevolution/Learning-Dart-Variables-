@@ -70,11 +70,17 @@ main(List<String> arguments) {
   nums.forEach(asObject);
   
   //As an anonymous function....
-  
   print("As an anonymous function");
   nums.forEach((f){
     print(f);
   });
+
+  //As an external function....
+  print("As an external function");
+  print(vatest.calculate());
+
+  //Functions with optional parameter functions..
+  print(compare(apples: 6, oranges: 6));
 }
 
 String createName(String s, [String t = "Das"]) {
@@ -83,4 +89,8 @@ String createName(String s, [String t = "Das"]) {
 
 void asObject(int i){
   print(i);
+}
+
+int compare({int apples = 0, int oranges = 0}){
+  return apples.compareTo(oranges);
 }
