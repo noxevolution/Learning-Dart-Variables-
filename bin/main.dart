@@ -68,6 +68,13 @@ main(List<String> arguments) {
 
   print("As Obejct");
   nums.forEach(asObject);
+  
+  //As an anonymous function....
+  
+  print("As an anonymous function");
+  nums.forEach((f){
+    print(f);
+  });
 }
 
 String createName(String s, [String t = "Das"]) {
