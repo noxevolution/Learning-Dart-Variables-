@@ -8,5 +8,7 @@ class house {
   int width = 12;
   int length = 20;
 
+  //Getter and Setter
+  int get footage => width * length;
 
 }

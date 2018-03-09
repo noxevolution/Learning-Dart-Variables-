@@ -85,9 +85,10 @@ main(List<String> arguments) {
 
   //Accessing another class..
   house house1 = new house();
-  
+
   house1.width = 60;
   house1.length = 70;
+  print(house1.footage);
 }
 
 String createName(String s, [String t = "Das"]) {
