@@ -80,7 +80,7 @@ main(List<String> arguments) {
   print(vatest.calculate());
 
   //Functions with optional parameter functions..
-  print(compare(apples: 6, oranges: 6));
+  print(compare(oranges: 6, apples: 6));
 }
 
 String createName(String s, [String t = "Das"]) {
