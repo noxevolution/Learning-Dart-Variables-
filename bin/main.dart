@@ -1,4 +1,5 @@
 import 'package:vatest/vatest.dart' as vatest;
+import 'house.dart';
 
 main(List<String> arguments) {
   print('Hello world: ${vatest.calculate()}!');
@@ -81,6 +82,12 @@ main(List<String> arguments) {
 
   //Functions with optional parameter functions..
   print(compare(oranges: 6, apples: 6));
+
+  //Accessing another class..
+  house house1 = new house();
+  
+  house1.width = 60;
+  house1.length = 70;
 }
 
 String createName(String s, [String t = "Das"]) {
