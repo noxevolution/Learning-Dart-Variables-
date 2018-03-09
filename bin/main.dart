@@ -88,6 +88,8 @@ main(List<String> arguments) {
 
   house1.width = 60;
   house1.length = 70;
+  house1.yearsold = 10;
+  print(house1.yearsold);
   print(house1.footage);
 }
 

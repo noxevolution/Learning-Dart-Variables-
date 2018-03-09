@@ -10,5 +10,7 @@ class house {
 
   //Getter and Setter
   int get footage => width * length;
+  int get yearsold => _age;
+  set yearsold(int value) => _age = value;
 
 }
