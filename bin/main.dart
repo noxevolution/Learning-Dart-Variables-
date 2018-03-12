@@ -1,4 +1,5 @@
 import 'package:vatest/vatest.dart' as vatest;
+import 'house.dart';
 
 main(List<String> arguments) {
   print('Hello world: ${vatest.calculate()}!');
@@ -55,4 +56,51 @@ main(List<String> arguments) {
     print ("$k is standing in $v position");
   });
 
+  //Beginner Fucntions....
+
+  print(createName('Proloy'));
+  print(createName('Proloy', 'Gando'));
+
+  //Advanced Functions....
+  List<int> nums = new List<int>();
+  nums.add(1);
+  nums.add(2);
+  nums.add(3);
+
+  print("As Obejct");
+  nums.forEach(asObject);
+  
+  //As an anonymous function....
+  print("As an anonymous function");
+  nums.forEach((f){
+    print(f);
+  });
+
+  //As an external function....
+  print("As an external function");
+  print(vatest.calculate());
+
+  //Functions with optional parameter functions..
+  print(compare(oranges: 6, apples: 6));
+
+  //Accessing another class..
+  house house1 = new house();
+
+  house1.width = 60;
+  house1.length = 70;
+  house1.yearsold = 10;
+  print(house1.yearsold);
+  print(house1.footage);
+}
+
+String createName(String s, [String t = "Das"]) {
+  return s+ " " +t;
+}
+
+void asObject(int i){
+  print(i);
+}
+
+int compare({int apples = 0, int oranges = 0}){
+  return apples.compareTo(oranges);
 }
