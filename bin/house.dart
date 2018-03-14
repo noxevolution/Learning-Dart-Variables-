@@ -12,5 +12,4 @@ class house {
   int get footage => width * length;
   int get yearsold => _age;
   set yearsold(int value) => _age = value;
-
 }
