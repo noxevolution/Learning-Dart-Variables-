@@ -1,6 +1,7 @@
 import 'package:vatest/vatest.dart' as vatest;
 import 'house.dart';
 import 'lion.dart';
+import 'monster.dart';
 
 main(List<String> arguments) {
   print('Hello world: ${vatest.calculate()}!');
@@ -97,6 +98,8 @@ main(List<String> arguments) {
   lion l = new lion();
   l.speak();
 
+  monster m = new monster();
+  m.speak();
 
 
 
