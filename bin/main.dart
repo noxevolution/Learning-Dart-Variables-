@@ -2,6 +2,7 @@ import 'package:vatest/vatest.dart' as vatest;
 import 'house.dart';
 import 'lion.dart';
 import 'monster.dart';
+import 'suv.dart';
 
 main(List<String> arguments) {
   print('Hello world: ${vatest.calculate()}!');
@@ -101,7 +102,11 @@ main(List<String> arguments) {
   monster m = new monster();
   m.speak();
 
-
+  //Mixins
+  suv jeep = new suv();
+  jeep.honkHorn();
+  print(jeep.doors());
+  print(jeep.color());
 
 
 
