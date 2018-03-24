@@ -4,6 +4,10 @@ import 'lion.dart';
 import 'monster.dart';
 import 'suv.dart';
 
+T add<T extends num>(T value) {
+  return value + 1;
+}
+
 main(List<String> arguments) {
   print('Hello world: ${vatest.calculate()}!');
   var something = "hello world";
@@ -107,6 +111,72 @@ main(List<String> arguments) {
   jeep.honkHorn();
   print(jeep.doors());
   print(jeep.color());
+
+  //Generics
+
+  print (add (1));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
